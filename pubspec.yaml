@@ -1,0 +1,38 @@
+name: microfund
+description: "MicroFund - แพลตฟอร์มคราวด์ฟันดิงไมโครไฟแนนซ์ (P2P Micro-lending Loan Portfolio) พร้อม Firebase + RBAC"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # --- Backend & Cloud Integration ---
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+
+  # --- Form Validation ---
+  form_field_validator: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+  # --- App Branding: เปลี่ยน Launcher Icon เป็นรูปเหรียญทอง ---
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+# ตั้งค่าไอคอนแอป: วางรูปไว้ที่ assets/icon/coin_icon.png แล้วรัน
+#   flutter pub run flutter_launcher_icons
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/coin_icon.png"
